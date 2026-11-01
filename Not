@@ -1,0 +1,31 @@
+def harf_notu_hesapla(vize,final):
+    vize_ort = vize * 40 / 100
+    final_ort = final * 60 / 100
+    if vize_ort + final_ort >= 90:
+        print("Harf notunuz AA.")
+    elif vize_ort + final_ort >= 80:
+        print("Harf notunuz BA.")
+    elif vize_ort + final_ort >= 70:
+        print("Harf notunuz BB.")
+    elif vize_ort + final_ort >= 60:
+        print("Harf notunuz CB.")
+    elif vize_ort + final_ort >= 50:
+        print("Harf notunuz CC.")
+    elif vize_ort + final_ort >= 40:
+        print("Harf notunuz DC.")
+    elif vize_ort + final_ort >= 30:
+        print("Harf notunuz DD.")
+    elif vize_ort + final_ort >= 20:
+        print("Harf notunuz FD.")
+    else:
+        print("Harf notunuz FF.")
+
+vize = int(input("Vize notunuzu giriniz: "))
+final = int(input("Final notunuzu giriniz: "))
+while vize < 0 or vize > 100:
+    print("İmkansiz not. Lütfen doğru notu giriniz.")
+    vize = int(input("Vize notunuzu giriniz: "))
+while final < 0 or final > 100:
+    print("İmkansiz not. Lütfen doğru notu giriniz.")
+    final = int(input("Final notunuzu giriniz: "))
+harf_notu_hesapla(vize,final)
