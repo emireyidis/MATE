@@ -1,0 +1,4 @@
+isim = input("Kullanicinin ismi: ")
+soy_isim = input("Kullanicinin soy ismi: ")
+sehir = input("Kullanicinin yasadigi sehir: ")
+print(f"Kullanicinin ismi {isim}, soy ismi {soy_isim}, yasadigi sehir {sehir}")
