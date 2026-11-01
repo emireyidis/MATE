@@ -1,5 +1,0 @@
-dogum_yili = int(input("Doğum yilinizi giriniz: "))
-if 2026 - dogum_yili >= 18:
-    print("Ehliyet alabilecek yaştasiniz.")
-else:
-    print("Ehliyet alabilecek yaşta değilsiniz.")
