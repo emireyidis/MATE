@@ -1,0 +1,15 @@
+import random
+sayi = random.randint(1,100)
+while True:
+    try:
+        tahmin = int(input("Tahmin ettiğim sayiyi (1-100 arasinda) bulmaya çalişin: "))
+        if tahmin > sayi:
+            print("Aşaği inin.")
+        elif tahmin < sayi:
+            print("Yukari çikin")
+        else:
+            print("Tebrikler bildiniz.")
+            break
+    except:
+        print("Doğru türde değer giriniz.")
+

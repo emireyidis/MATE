@@ -1,0 +1,9 @@
+sayi = int(input("Bir sayi giriniz:"))
+toplam = 0
+while sayi<0:
+    print("Girilen sayi 0'dan küçük bir daha giriniz.")
+    sayi = int(input("Bir sayi giriniz:"))
+while sayi>0:
+    toplam += sayi
+    sayi -= 1
+print(toplam) 

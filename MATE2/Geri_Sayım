@@ -1,0 +1,4 @@
+sayi = int(input("Geri sayim için bir değer girin: "))
+for i in range(sayi,0,-1):
+    print(i)
+print("Ateş!")

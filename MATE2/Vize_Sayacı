@@ -1,0 +1,10 @@
+import datetime
+
+vize = input("Vize tarihini giriniz (GG.AA.YYYY): ")
+saat = input("Vize saatini giriniz (SS:DD): ")
+
+sinav = datetime.datetime.strptime(vize + " " + saat, "%d.%m.%Y %H:%M")
+
+kalan_zaman = sinav - datetime.datetime.now()
+
+print(f"Bir sonraki sinava kalan süre {kalan_zaman}")

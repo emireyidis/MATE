@@ -1,0 +1,7 @@
+while True:
+    try:
+        sayi = int(input("Bir tam sayi giriniz: "))
+        print(sayi)
+        break
+    except:
+        print("Girdiğiniz değer hatali lütfen tekrar girin.")
